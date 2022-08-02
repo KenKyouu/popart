@@ -1,0 +1,605 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Cormorant SC', serif;
+}
+
+.bgone {
+  background-image: url(../image/BG.png);
+}
+
+.bgtwo {
+  background-image: url(../image/BG3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.homepage {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  // max-width: 1440px;
+  // max-height: 900px;
+  // border-left: 3px solid black;
+  // border-right: 3px solid black;
+}
+
+.popartpage {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  // max-width: 1440px;
+  // max-height: 900px;
+  overflow: hidden;
+  // border-left: 3px solid black;
+  // border-right: 3px solid black;
+}
+
+.header {
+  display: flex;
+  .left {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    svg {
+      width: 100%;
+    }
+  }
+  .line-col-header {
+    width: 3px;
+    height: 119px;
+    background-color: black;
+  }
+  .middle {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      li {
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 3.5rem;
+          // font-family: "Noto Sans JP", sans-serif;
+          font-family: 'Cormorant SC', serif;
+        }
+      }
+    }
+  }
+}
+
+.headerline-row {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+
+.content {
+  height: calc(100% - 122px);
+  display: flex;
+  .left {
+    width: calc(85% + 3px);
+    height: 100%;
+    position: relative;
+    .image {
+      width: 50%;
+      position: absolute;
+      z-index: 10;
+      left: 10%;
+      top: 5%;
+      .banana {
+        width: 90%;
+        position: absolute;
+        opacity: 0;
+      }
+      .pumpkin {
+        position: absolute;
+        width: 90%;
+        opacity: 0;
+      }
+    }
+    .title {
+      .B {
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        transform: scale(1.7);
+        // scale: 170%;
+        opacity: 0;
+      }
+      .A {
+        position: absolute;
+        top: 40%;
+        left: 48%;
+        transform: scale(1.5);
+        // scale: 150%;
+        opacity: 0;
+      }
+      .N {
+        position: absolute;
+        top: 0%;
+        left: 56%;
+        transform: scale(1);
+        // scale: 100%;
+        opacity: 0;
+      }
+      .A2 {
+        position: absolute;
+        top: 4%;
+        left: 75%;
+        transform: scale(1.2);
+        // scale: 120%;
+        opacity: 0;
+      }
+      .N2 {
+        position: absolute;
+        top: 70%;
+        left: 63%;
+        transform: scale(1.6);
+        // scale: 160%;
+        opacity: 0;
+      }
+      .A3 {
+        position: absolute;
+        top: 72%;
+        left: 80%;
+        transform: scale(1.5);
+        // scale: 150%;
+        opacity: 0;
+      }
+      .P {
+        position: absolute;
+        right: 450px;
+        top: 80px;
+        opacity: 0;
+      }
+      .U {
+        position: absolute;
+        right: 250px;
+        top: 80px;
+        opacity: 0;
+      }
+      .M {
+        position: absolute;
+        right: 30px;
+        top: 80px;
+        opacity: 0;
+      }
+      .P2 {
+        position: absolute;
+        right: 330px;
+        top: 310px;
+        opacity: 0;
+      }
+      .K {
+        position: absolute;
+        right: 120px;
+        top: 310px;
+        opacity: 0;
+      }
+      .I {
+        position: absolute;
+        right: 330px;
+        top: 530px;
+        opacity: 0;
+      }
+      .N3 {
+        position: absolute;
+        right: 100px;
+        top: 530px;
+        opacity: 0;
+      }
+    }
+  }
+  .line-col {
+    width: 3px;
+    height: 100%;
+    background-color: black;
+  }
+  .right {
+    width: calc(100% - 85% - 6px);
+    overflow: hidden;
+
+    .image {
+      width: 100%;
+      aspect-ratio: 1/1;
+      overflow: hidden;
+      position: relative;
+      img.andy {
+        width: 100%;
+        position: absolute;
+        opacity: 0;
+      }
+      img.yayoi {
+        width: 100%;
+        position: absolute;
+        opacity: 0;
+      }
+    }
+    .horizonline {
+      width: 100%;
+      height: 3px;
+      background-color: black;
+    }
+    .text {
+      width: 100%;
+      height: calc(100% - 15%);
+      display: flex;
+      .quote {
+        width: 35%;
+        height: 80%;
+        padding: 100px 0 90px 0;
+        justify-content: center;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        p {
+          writing-mode: vertical-rl;
+          font-size: 1.6rem;
+          height: 100%;
+          line-height: 1.2;
+          position: absolute;
+          visibility: hidden;
+        }
+      }
+      .line-col {
+        width: 3px;
+        height: 100%;
+        background-color: black;
+      }
+      .name {
+        width: 65%;
+        height: 100%;
+        padding: 20px 0 90px 0;
+        justify-content: center;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        h3 {
+          writing-mode: vertical-rl;
+          font-size: 5.2rem;
+          white-space: nowrap;
+          position: absolute;
+          visibility: hidden;
+          // text-align: center;
+          // padding-left: 35px;
+        }
+      }
+    }
+  }
+}
+
+.popartcontent {
+  margin: 0 auto;
+  position: relative;
+  .popartlogo {
+    width: 150px;
+    position: absolute;
+    left: 15%;
+    padding-top: 10px;
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .content {
+    position: relative;
+    .text {
+      position: absolute;
+      left: 15%;
+      padding-top: 160px;
+      img {
+        width: 100%;
+      }
+    }
+    .people {
+      position: absolute;
+      right: 10%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.artistpage {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  // max-width: 1440px;
+  // max-height: 900px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  .left {
+    width: 50%;
+    .image {
+      margin: 10%;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .left-outter {
+    width: 50%;
+    height: 100vh;
+    background-color: #eded56;
+    position: absolute;
+    z-index: 50;
+    left: -50%;
+  }
+  .right {
+    width: 50%;
+    height: 100%;
+    .sectionOne {
+      height: calc(100% / 3);
+      div {
+        text-decoration: none;
+        height: 100%;
+        .one {
+          height: 100%;
+          .cardone {
+            padding-top: 10px;
+            height: 100%;
+            border-bottom: 2px solid black;
+            background-color: #eded56;
+            transition: all 0.3s;
+            &:hover {
+              background-color: #f5b5c7;
+            }
+            .image {
+              padding: 10px 0;
+              height: 75%;
+              background-image: url(../image/kusamayayoi/kusamayayoiBW.png);
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+            .name {
+              height: 25%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              h4 {
+                text-align: center;
+                font-size: 2rem;
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sectionTwo {
+      height: calc(100% / 3);
+      display: flex;
+      div {
+        text-decoration: none;
+        height: 100%;
+        width: 100%;
+        .one {
+          height: 100%;
+          width: 100%;
+          .cardtwo,
+          .cardthree {
+            padding-top: 10px;
+            height: 100%;
+            border-bottom: 2px solid black;
+            background-color: #eded56;
+            transition: all 0.3s;
+            &:hover {
+              background-color: #f5b5c7;
+            }
+            .name {
+              height: 25%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              h4 {
+                text-align: center;
+                font-size: 2rem;
+                color: black;
+              }
+            }
+          }
+          .cardtwo {
+            border-right: 1px solid black;
+            .image {
+              padding: 10px 0;
+              height: 75%;
+              background-image: url(../image/jasperjohns/JasperJohns.jpg);
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+          }
+          .cardthree {
+            border-left: 1px solid black;
+            .image {
+              padding: 10px 0;
+              height: 75%;
+              background-image: url(../image/claesoldenburg/Claes_Oldenburg.jpg);
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+          }
+        }
+      }
+    }
+    .sectionThree {
+      height: calc(100% / 3);
+      display: flex;
+      div {
+        text-decoration: none;
+        height: 100%;
+        width: 100%;
+        .one {
+          height: 100%;
+          width: 100%;
+          .cardfour,
+          .cardfive {
+            padding-top: 10px;
+            height: 100%;
+            border-bottom: 2px solid black;
+            background-color: #eded56;
+            transition: all 0.3s;
+            &:hover {
+              background-color: #f5b5c7;
+            }
+            .name {
+              height: 25%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              h4 {
+                text-align: center;
+                font-size: 2rem;
+                color: black;
+              }
+            }
+          }
+          .cardfour {
+            border-right: 1px solid black;
+            .image {
+              padding: 10px 0;
+              height: 75%;
+              background-image: url(../image/richardhamilton/Richard_Hamilton.jpg);
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+          }
+          .cardfive {
+            border-left: 1px solid black;
+            .image {
+              padding: 10px 0;
+              height: 75%;
+              background-image: url(../image/andywarhol/4500.jpg.webp);
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .right-outter {
+    width: 50%;
+    background-color: #eded56;
+    position: absolute;
+    z-index: 50;
+    right: -50%;
+    transition: all 1s;
+    .backbutton {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      p {
+        font-size: 2.5rem;
+        margin-left: 20px;
+        padding-bottom: 5px;
+        display: flex;
+        align-items: center;
+        font-family: 'Cormorant SC', serif;
+      }
+    }
+    .artistcontent {
+      margin: 50px;
+      height: 200vh;
+      overflow: auto;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      #artistName {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 50px;
+        font-family: 'Cormorant SC', serif;
+      }
+      .horizon {
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        margin-bottom: 50px;
+      }
+      .artistIntro {
+        height: 105%;
+        overflow: auto;
+
+        p#intro {
+          font-size: 2rem;
+          line-height: 1.5;
+          overflow: auto;
+          font-family: 'Cormorant SC', serif;
+        }
+      }
+    }
+  }
+}
+
+#kusamayayoi,
+#jasperjohns,
+#claesoldenburg,
+#richardhamilton,
+#andywarhol {
+  cursor: pointer;
+}
+
+// jQ - active
+
+.left-outter-active {
+  animation: leftcover 2s;
+}
+
+@keyframes leftcover {
+  0% {
+    left: -50%;
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    left: -50%;
+  }
+}
+
+@keyframes rightcover {
+  0% {
+    right: -50%;
+  }
+  100% {
+    right: 0;
+  }
+}

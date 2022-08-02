@@ -1,0 +1,514 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  //   font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Cormorant SC', serif;
+}
+
+// .pc {
+//   display: none;
+// }
+// .mobile {
+//   display: none;
+// }
+// .mobilepagetwo {
+//   display: none;
+// }
+
+.mobile {
+  //   width: 100%;
+  //   height: 100vh;
+  background-image: url(../image/BG.png);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.mobileheader {
+  height: 15vh;
+  //   position: sticky;
+  //   top: 0;
+  .mobilelogo {
+    height: calc(100% / 2);
+    svg {
+      width: 100%;
+      transform: scale(0.5) translateY(-45px);
+    }
+  }
+  .space {
+    width: 100%;
+    height: 5px;
+  }
+  .mobileheaderbutton {
+    padding: 10px 0;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        a {
+          text-decoration: none;
+          font-size: 1.5rem;
+          // font-family: "Noto Sans JP", sans-serif;
+          font-family: 'Cormorant SC', serif;
+          color: black;
+        }
+      }
+    }
+  }
+  .headerhorizon {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+}
+
+.mobilesectionone {
+  .mobileartistintro {
+    padding: 20px;
+    .photo {
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      position: relative;
+      .andyimage {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        position: absolute;
+        opacity: 0;
+        img {
+          width: 100%;
+        }
+      }
+      .yayoiimage {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        position: absolute;
+        opacity: 0;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .name {
+      margin: 10px auto;
+      height: 2rem;
+      .andyname {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        h3 {
+          text-align: center;
+          font-size: 2rem;
+          position: absolute;
+          visibility: hidden;
+        }
+      }
+      .yayoiname {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        h3 {
+          text-align: center;
+          font-size: 2rem;
+          position: absolute;
+          visibility: hidden;
+        }
+      }
+    }
+    .quote {
+      margin-bottom: 20px;
+      .andyquote {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        p {
+          font-size: 1.2rem;
+          position: absolute;
+          visibility: hidden;
+        }
+      }
+      .yayoiquote {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        p {
+          font-size: 1.2rem;
+          position: absolute;
+          visibility: hidden;
+        }
+      }
+    }
+  }
+}
+
+.mobilesectiontwo {
+  margin-top: 50px;
+  .product {
+    .artwork {
+      margin-bottom: 40px;
+      .horizon {
+        width: 50%;
+        height: 1px;
+        margin: auto;
+        background-color: black;
+      }
+      h4 {
+        margin: 5px 0;
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Cormorant SC', serif;
+      }
+    }
+    .productphoto {
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      margin-bottom: 70px;
+      position: relative;
+      .bananaimage {
+        width: 200px;
+        margin: auto;
+        position: absolute;
+        opacity: 0;
+        img {
+          width: 100%;
+        }
+      }
+      .pumpkinimage {
+        width: 200px;
+        margin: auto;
+        position: absolute;
+        opacity: 0;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.mobilesectionthree {
+  .aboutpopart {
+    .horizon {
+      width: 70%;
+      height: 1px;
+      margin: auto;
+      background-color: black;
+    }
+    h4 {
+      font-size: 2rem;
+      text-align: center;
+      margin: 5px 0;
+    }
+  }
+  .popartintro {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    p {
+      padding: 20px 0 50px 0;
+      font-size: 1.2rem;
+      line-height: 1.2;
+    }
+  }
+}
+
+.mobilepagetwo {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.popartsection {
+  width: 100%;
+  height: 100vh;
+  background-color: #eded56;
+  .mobilepagetwoheader {
+    width: 100%;
+    height: 48px;
+    ul {
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-around;
+      li {
+        a {
+          text-decoration: none;
+          font-size: 1.5rem;
+          // font-family: "Noto Sans JP", sans-serif;
+          font-family: 'Cormorant SC', serif;
+          color: black;
+        }
+      }
+    }
+  }
+  .mobilepagetwoheaderhorizon {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+  .sectionOne {
+    height: calc((100% - 50px) / 3);
+    div {
+      text-decoration: none;
+      height: 100%;
+      .one {
+        height: 100%;
+        .cardone {
+          padding-top: 10px;
+          height: 100%;
+          border-bottom: 2px solid black;
+          background-color: #eded56;
+          transition: all 0.3s;
+          &:hover {
+            background-color: #f5b5c7;
+          }
+          .image {
+            padding: 10px;
+            height: 75%;
+            background-image: url(../image/kusamayayoi/kusamayayoiBW.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+          .name {
+            height: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h4 {
+              text-align: center;
+              font-size: 1.2rem;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sectionTwo {
+    height: calc((100% - 50px) / 3);
+    display: flex;
+    div {
+      text-decoration: none;
+      height: 100%;
+      width: 100%;
+      .one {
+        height: 100%;
+        width: 100%;
+        .cardtwo,
+        .cardthree {
+          padding-top: 10px;
+          height: 100%;
+          border-bottom: 2px solid black;
+          background-color: #eded56;
+          transition: all 0.3s;
+          &:hover {
+            background-color: #f5b5c7;
+          }
+          .name {
+            height: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h4 {
+              text-align: center;
+              font-size: 1.2rem;
+              color: black;
+            }
+          }
+        }
+        .cardtwo {
+          border-right: 1px solid black;
+          .image {
+            padding: 10px;
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            background-image: url(../image/jasperjohns/JasperJohns.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+        }
+        .cardthree {
+          border-left: 1px solid black;
+          .image {
+            padding: 10px;
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            background-image: url(../image/claesoldenburg/Claes_Oldenburg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+        }
+      }
+    }
+  }
+  .sectionThree {
+    height: calc((100% - 50px) / 3);
+    display: flex;
+    div {
+      text-decoration: none;
+      height: 100%;
+      width: 100%;
+      .one {
+        height: 100%;
+        width: 100%;
+        .cardfour,
+        .cardfive {
+          padding-top: 10px;
+          height: 100%;
+          border-bottom: 2px solid black;
+          background-color: #eded56;
+          transition: all 0.3s;
+          &:hover {
+            background-color: #f5b5c7;
+          }
+          .name {
+            height: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h4 {
+              text-align: center;
+              font-size: 1.2rem;
+              color: black;
+            }
+          }
+        }
+        .cardfour {
+          border-right: 1px solid black;
+          .image {
+            padding: 10px;
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            background-image: url(../image/richardhamilton/Richard_Hamilton.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+        }
+        .cardfive {
+          border-left: 1px solid black;
+          .image {
+            padding: 10px;
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            background-image: url(../image/andywarhol/4500.jpg.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.right-outter {
+  width: 100%;
+  background-color: #eded56;
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  right: -100%;
+  transition: all 1s;
+  .backbutton {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    svg {
+      transform: scale(0.5);
+    }
+    p {
+      font-size: 1.5rem;
+      padding-bottom: 2px;
+      display: flex;
+      align-items: center;
+      font-family: 'Cormorant SC', serif;
+    }
+  }
+  .artistcontent {
+    margin: 20px;
+    height: 100vh;
+    overflow: auto;
+    #artistNamemobile {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-family: 'Cormorant SC', serif;
+    }
+    #imagemobile {
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 30px;
+      img {
+        width: 100%;
+      }
+    }
+    .horizon {
+      width: 100%;
+      height: 3px;
+      background-color: black;
+      margin-bottom: 50px;
+    }
+    .artistIntro {
+      height: 90%;
+      overflow: auto;
+      p#intromobile {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        overflow: auto;
+        font-family: 'Cormorant SC', serif;
+      }
+    }
+  }
+}
+
+// .backtotopbutton {
+//   width: 40px;
+//   height: 40px;
+//   border-radius: 50%;
+//   border: 1px solid black;
+//   position: fixed;
+//   bottom: 30px;
+//   right: 10px;
+// }
+
+@media (min-width: 1301px) {
+  .mobile,
+  .mobilepagetwo {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .pc {
+    display: none;
+  }
+}
+
+// @media (max-width: 1439px) {
+//   .pagetwodashone {
+//     display: none;
+//   }
+// }

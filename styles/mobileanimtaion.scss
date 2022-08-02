@@ -1,0 +1,164 @@
+.mobileheader {
+  .mobilelogo {
+    animation: uptodown 3s;
+  }
+  .mobileheaderbutton {
+    ul {
+      .lihome {
+        animation: lefttoright 3s;
+      }
+      .lipopart {
+        animation: righttoleft 3s;
+      }
+    }
+  }
+  .headerhorizon {
+    animation: headerhorizon 3s;
+  }
+}
+
+.mobilesectionone {
+  .mobileartistintro {
+    .photo {
+      .andyimage {
+        animation: photoinandout 20s infinite;
+      }
+      .yayoiimage {
+        animation: photoinandout 20s 10s infinite;
+      }
+    }
+    .name {
+      .andyname {
+        h3 {
+          animation: textinandout 20s infinite;
+        }
+      }
+      .yayoiname {
+        h3 {
+          animation: textinandout 20s 10s infinite;
+        }
+      }
+    }
+    .quote {
+      .andyquote {
+        p {
+          animation: textinandout 20s infinite;
+        }
+      }
+      .yayoiquote {
+        p {
+          animation: textinandout 20s 10s infinite;
+        }
+      }
+    }
+  }
+}
+
+.mobilesectiontwo {
+  .product {
+    .productphoto {
+      .bananaimage {
+        animation: productscale 20s infinite;
+      }
+      .pumpkinimage {
+        animation: productscale 20s 10s infinite;
+      }
+    }
+  }
+}
+
+@keyframes photoinandout {
+  0% {
+    opacity: 1;
+    transform: translateX(375px);
+  }
+  15% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-375px);
+  }
+}
+
+@keyframes productscale {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  15% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@keyframes textinandout {
+  0% {
+    visibility: inherit;
+    transform: translateX(375px);
+  }
+  15% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  49% {
+    visibility: inherit;
+  }
+  50% {
+    visibility: hidden;
+    transform: translateX(-375px);
+  }
+}
+
+@keyframes uptodown {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes lefttoright {
+  0% {
+    transform: translateX(-375px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes righttoleft {
+  0% {
+    transform: translateX(375px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes headerhorizon {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

@@ -1,0 +1,616 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cormorant SC', serif;
+}
+
+.mobile {
+  background-image: url(../image/BG.png);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.mobileheader {
+  height: 15vh;
+}
+
+.mobileheader .mobilelogo {
+  height: calc(100% / 2);
+}
+
+.mobileheader .mobilelogo svg {
+  width: 100%;
+  -webkit-transform: scale(0.5) translateY(-45px);
+          transform: scale(0.5) translateY(-45px);
+}
+
+.mobileheader .space {
+  width: 100%;
+  height: 5px;
+}
+
+.mobileheader .mobileheaderbutton {
+  padding: 10px 0;
+}
+
+.mobileheader .mobileheaderbutton ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mobileheader .mobileheaderbutton ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: 'Cormorant SC', serif;
+  color: black;
+}
+
+.mobileheader .headerhorizon {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+.mobilesectionone .mobileartistintro {
+  padding: 20px;
+}
+
+.mobilesectionone .mobileartistintro .photo {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  position: relative;
+}
+
+.mobilesectionone .mobileartistintro .photo .andyimage {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+}
+
+.mobilesectionone .mobileartistintro .photo .andyimage img {
+  width: 100%;
+}
+
+.mobilesectionone .mobileartistintro .photo .yayoiimage {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+}
+
+.mobilesectionone .mobileartistintro .photo .yayoiimage img {
+  width: 100%;
+}
+
+.mobilesectionone .mobileartistintro .name {
+  margin: 10px auto;
+  height: 2rem;
+}
+
+.mobilesectionone .mobileartistintro .name .andyname {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobilesectionone .mobileartistintro .name .andyname h3 {
+  text-align: center;
+  font-size: 2rem;
+  position: absolute;
+  visibility: hidden;
+}
+
+.mobilesectionone .mobileartistintro .name .yayoiname {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobilesectionone .mobileartistintro .name .yayoiname h3 {
+  text-align: center;
+  font-size: 2rem;
+  position: absolute;
+  visibility: hidden;
+}
+
+.mobilesectionone .mobileartistintro .quote {
+  margin-bottom: 20px;
+}
+
+.mobilesectionone .mobileartistintro .quote .andyquote {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobilesectionone .mobileartistintro .quote .andyquote p {
+  font-size: 1.2rem;
+  position: absolute;
+  visibility: hidden;
+}
+
+.mobilesectionone .mobileartistintro .quote .yayoiquote {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobilesectionone .mobileartistintro .quote .yayoiquote p {
+  font-size: 1.2rem;
+  position: absolute;
+  visibility: hidden;
+}
+
+.mobilesectiontwo {
+  margin-top: 50px;
+}
+
+.mobilesectiontwo .product .artwork {
+  margin-bottom: 40px;
+}
+
+.mobilesectiontwo .product .artwork .horizon {
+  width: 50%;
+  height: 1px;
+  margin: auto;
+  background-color: black;
+}
+
+.mobilesectiontwo .product .artwork h4 {
+  margin: 5px 0;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Cormorant SC', serif;
+}
+
+.mobilesectiontwo .product .productphoto {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.mobilesectiontwo .product .productphoto .bananaimage {
+  width: 200px;
+  margin: auto;
+  position: absolute;
+  opacity: 0;
+}
+
+.mobilesectiontwo .product .productphoto .bananaimage img {
+  width: 100%;
+}
+
+.mobilesectiontwo .product .productphoto .pumpkinimage {
+  width: 200px;
+  margin: auto;
+  position: absolute;
+  opacity: 0;
+}
+
+.mobilesectiontwo .product .productphoto .pumpkinimage img {
+  width: 100%;
+}
+
+.mobilesectionthree .aboutpopart .horizon {
+  width: 70%;
+  height: 1px;
+  margin: auto;
+  background-color: black;
+}
+
+.mobilesectionthree .aboutpopart h4 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.mobilesectionthree .popartintro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 20px;
+}
+
+.mobilesectionthree .popartintro p {
+  padding: 20px 0 50px 0;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.mobilepagetwo {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.popartsection {
+  width: 100%;
+  height: 100vh;
+  background-color: #eded56;
+}
+
+.popartsection .mobilepagetwoheader {
+  width: 100%;
+  height: 48px;
+}
+
+.popartsection .mobilepagetwoheader ul {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.popartsection .mobilepagetwoheader ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: 'Cormorant SC', serif;
+  color: black;
+}
+
+.popartsection .mobilepagetwoheaderhorizon {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+.popartsection .sectionOne {
+  height: calc((100% - 50px) / 3);
+}
+
+.popartsection .sectionOne div {
+  text-decoration: none;
+  height: 100%;
+}
+
+.popartsection .sectionOne div .one {
+  height: 100%;
+}
+
+.popartsection .sectionOne div .one .cardone {
+  padding-top: 10px;
+  height: 100%;
+  border-bottom: 2px solid black;
+  background-color: #eded56;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.popartsection .sectionOne div .one .cardone:hover {
+  background-color: #f5b5c7;
+}
+
+.popartsection .sectionOne div .one .cardone .image {
+  padding: 10px;
+  height: 75%;
+  background-image: url(../image/kusamayayoi/kusamayayoiBW.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.popartsection .sectionOne div .one .cardone .name {
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popartsection .sectionOne div .one .cardone .name h4 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.popartsection .sectionTwo {
+  height: calc((100% - 50px) / 3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popartsection .sectionTwo div {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
+.popartsection .sectionTwo div .one {
+  height: 100%;
+  width: 100%;
+}
+
+.popartsection .sectionTwo div .one .cardtwo,
+.popartsection .sectionTwo div .one .cardthree {
+  padding-top: 10px;
+  height: 100%;
+  border-bottom: 2px solid black;
+  background-color: #eded56;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.popartsection .sectionTwo div .one .cardtwo:hover,
+.popartsection .sectionTwo div .one .cardthree:hover {
+  background-color: #f5b5c7;
+}
+
+.popartsection .sectionTwo div .one .cardtwo .name,
+.popartsection .sectionTwo div .one .cardthree .name {
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popartsection .sectionTwo div .one .cardtwo .name h4,
+.popartsection .sectionTwo div .one .cardthree .name h4 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.popartsection .sectionTwo div .one .cardtwo {
+  border-right: 1px solid black;
+}
+
+.popartsection .sectionTwo div .one .cardtwo .image {
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background-image: url(../image/jasperjohns/JasperJohns.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.popartsection .sectionTwo div .one .cardthree {
+  border-left: 1px solid black;
+}
+
+.popartsection .sectionTwo div .one .cardthree .image {
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background-image: url(../image/claesoldenburg/Claes_Oldenburg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.popartsection .sectionThree {
+  height: calc((100% - 50px) / 3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popartsection .sectionThree div {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
+.popartsection .sectionThree div .one {
+  height: 100%;
+  width: 100%;
+}
+
+.popartsection .sectionThree div .one .cardfour,
+.popartsection .sectionThree div .one .cardfive {
+  padding-top: 10px;
+  height: 100%;
+  border-bottom: 2px solid black;
+  background-color: #eded56;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.popartsection .sectionThree div .one .cardfour:hover,
+.popartsection .sectionThree div .one .cardfive:hover {
+  background-color: #f5b5c7;
+}
+
+.popartsection .sectionThree div .one .cardfour .name,
+.popartsection .sectionThree div .one .cardfive .name {
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popartsection .sectionThree div .one .cardfour .name h4,
+.popartsection .sectionThree div .one .cardfive .name h4 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.popartsection .sectionThree div .one .cardfour {
+  border-right: 1px solid black;
+}
+
+.popartsection .sectionThree div .one .cardfour .image {
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background-image: url(../image/richardhamilton/Richard_Hamilton.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.popartsection .sectionThree div .one .cardfive {
+  border-left: 1px solid black;
+}
+
+.popartsection .sectionThree div .one .cardfive .image {
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background-image: url(../image/andywarhol/4500.jpg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.right-outter {
+  width: 100%;
+  background-color: #eded56;
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  right: -100%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.right-outter .backbutton {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.right-outter .backbutton svg {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.right-outter .backbutton p {
+  font-size: 1.5rem;
+  padding-bottom: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Cormorant SC', serif;
+}
+
+.right-outter .artistcontent {
+  margin: 20px;
+  height: 100vh;
+  overflow: auto;
+}
+
+.right-outter .artistcontent #artistNamemobile {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: 'Cormorant SC', serif;
+}
+
+.right-outter .artistcontent #imagemobile {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.right-outter .artistcontent #imagemobile img {
+  width: 100%;
+}
+
+.right-outter .artistcontent .horizon {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  margin-bottom: 50px;
+}
+
+.right-outter .artistcontent .artistIntro {
+  height: 90%;
+  overflow: auto;
+}
+
+.right-outter .artistcontent .artistIntro p#intromobile {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  overflow: auto;
+  font-family: 'Cormorant SC', serif;
+}
+
+@media (min-width: 1301px) {
+  .mobile,
+  .mobilepagetwo {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .pc {
+    display: none;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */
